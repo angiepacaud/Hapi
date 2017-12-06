@@ -4,19 +4,41 @@
             <div id="output"></div>
             <div class="avatar"></div>
             <div class="form-box">
+                <button class="btn" @click="increment">{{count}}</button>
+                <button class="btn" @click="reset">reset</button>
                 <form action="" method="">
                     <input name="user" type="text" placeholder="username">
                     <input type="password" placeholder="password">
                     <button class="btn btn-info btn-block login" type="submit">Login</button>
                 </form>
             </div>
+            <ul>
+                <li v-for="line of list">
+                    <a> me huele {{line.name}}</a>
+                </li>
+            </ul>
         </div>
         
 </div>
 </template>
 
 <script>
+  import { mapState, mapMutations } from 'vuex'
 
+  export default {
+    computed: {
+      ...mapState({
+        count: state => state.count,
+        list: state => state.list
+      })
+    },
+    methods: {
+      ...mapMutations([
+        'increment',
+        'reset'
+      ])
+    }
+  }
 </script>
 
 <style>

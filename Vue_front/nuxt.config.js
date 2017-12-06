@@ -14,6 +14,10 @@ module.exports = {
     ]
   },
   /*
+  Add Global CSS for the project
+  */
+  css: ['\~/node_modules/bulma/css/bulma.css'],
+  /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },

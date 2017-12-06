@@ -60,7 +60,7 @@ server.register([
 
 server.route({										//Construction de la route 
     method: 'GET',
-    path: '/{angieMessage?}',
+    path: '/crime',
     handler: handler
 	});
 
