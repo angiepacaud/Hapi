@@ -20,6 +20,9 @@ const state = () => ({
 })
 
 const mutations = {
+  initial(state, data) {
+    state.list = data
+  }
   increment (state) {
     state.count++
   },

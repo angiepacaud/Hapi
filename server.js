@@ -4,7 +4,7 @@ const Hapi = require('hapi');
 const Config = require('config');
 const Joi = require('joi');
 
-const handler = (request, reply) => {reply(request.params)}
+const handler = (request, reply) => {reply('Hello, world!');}
 
 const todo = require('./routes/todo')
 
