@@ -3,8 +3,10 @@
 const Hapi = require('hapi');
 const Config = require('config');
 const Joi = require('joi');
+const Index = require('./Vue_front/store/index.js');
 
-const handler = (request, reply) => {reply('Hello, world!');}
+
+const handler = (request, reply) => {reply(state.list);}
 
 const todo = require('./routes/todo')
 

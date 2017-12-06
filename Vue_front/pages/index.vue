@@ -24,13 +24,13 @@
 
 <script>
   import { mapState, mapMutations } from 'vuex'
-  import axios from 'axios'
+  // import axios from 'axios'
 
   export default {
-    async fetch ({store}) {
-        const res = await axios ('http://localhost:4000/crime')
-        store.commit('initial',res. data)
-    },
+    // async fetch ({store}) {
+    //   const res = await axios('http://localhost:4000/crime')
+    //   store.commit('initial', res.data)
+    // },
     computed: {
       ...mapState({
         count: state => state.count,
