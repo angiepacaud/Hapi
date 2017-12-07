@@ -1,21 +1,21 @@
 const state = () => ({
   count: 0,
   list: [
-    // {
-    //   user: 1,
-    //   name: 'el guevo',
-    //   test: false
-    // },
-    // {
-    //   user: 2,
-    //   name: 'la cuca',
-    //   test: false
-    // },
-    // {
-    //   user: 3,
-    //   name: 'el Sobaco',
-    //   test: false
-    // }
+    {
+      user: 1,
+      name: 'el guevo',
+      test: false
+    },
+    {
+      user: 2,
+      name: 'la cuca',
+      test: false
+    },
+    {
+      user: 3,
+      name: 'el Sobaco',
+      test: false
+    }
   ]
 })
 
@@ -31,4 +31,4 @@ const mutations = {
   }
 }
 
-export { state, mutations }
+// export { state, mutations }
